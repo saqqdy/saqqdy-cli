@@ -7,7 +7,7 @@ const logUpdate = require('log-update');
 program
     .version('1.0.1')
     .usage('app_name')
-    .description('构建Vue模板')
+    .description('选择Vue模板')
     .parse(process.argv);
 
 if (!program.args.length) {
@@ -23,12 +23,13 @@ if (program.args.length === 1) {
     const frame = frames[i = ++i % frames.length];
     logUpdate(`👉 👉 ${frame} initializing ${frame} 👈 👈`);
   }, 50)
-  shell.exec('git pull git@github.com:imhxc/hapi-temp.git', (code) => {
+  shell.exec('git pull git@github.com:saqqdy/vue_cli3_px_to_viewport_h5.git', (code) => {
     clearInterval(interval);
     if (code !== 0) {
       console.log('Error! Try again');
       shell.exit(1);
     }
-    console.log('👏 👏 Completed! You are  good to go! 👏 👏');
+    console.log('👏 👏 Completed! You are good to go! 👏 👏');
   })
 }
+
