@@ -1,6 +1,6 @@
 {
   "name": "@saqqdy/cli",
-  "version": "1.0.1",
+  "version": "1.0.15",
   "description": "saqqdy的cli工具",
   "private": false,
   "main": "index.js",
@@ -28,7 +28,9 @@
   "homepage": "https://github.com/saqqdy/saqqdy-cli#readme",
   "dependencies": {
     "commander": "^2.19.0",
+    "git-clone": "^0.1.0",
     "log-update": "^2.3.0",
-    "shelljs": "^0.8.3"
+    "shelljs": "^0.8.3",
+    "tracer": "^0.9.8"
   }
 }

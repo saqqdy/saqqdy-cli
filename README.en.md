@@ -1,79 +1,53 @@
 # @saqqdy/cli
 
 ### Description
-移动端H5适配一直是困扰前端工程师的大问题，有关于移动端的布局适配方案一直以来都是众说纷纭，对应的解决方案也是有很多种。从最原始的px => rem => vw，随着viewport单位越来越受到众多浏览器的支持，到目前为止不管是哪一种方案，都还存在一定的缺陷。言外之意，还没有哪一个方案是完美的。
-
-其实用什么方案不是重点，重点是我们究竟怎么去实现从UI设计文档到计算出对应宽高字体大小这个过程。今天我们重点来解决这个痛点。
+saqqdy提供的vue模板专用安装工具，采用vue cli的风格，一键生成vue网站模板
 
 ### Software Architecture
-本框架是基于VUE CLI2生成的基本模板，集成了Vuex、Vue-router、e2e/unit等基础插件。在此基础上添加了对px到vw单位的自动处理插件
-
+基于commander、git-clone、shelljs、tracer等
 
 ### Installation
 
-``` bash
-# install saqqdy cli
-npm install -g @saqqdy/cli
-# install dependencies
-saqqdy create
-
 ```
+# 安装saqqdy-cli
+npm install -g @saqqdy/cli
+
+# 使用saqqdy-cli创建模板
+saqqdy <template name> <project name>
+
+# 进入项目目录安装依赖
+cd <project name>
+npm install
+
+# serve with hot reload at localhost:8080
+npm run dev
+
+# build for production with minification
+npm run build
+
+# build for production and view the bundle analyzer report
+npm run build --report
+
+# run unit tests
+npm run unit
+
+# run e2e tests
+npm run e2e
+
+# run all tests
+npm test
+```
+
 ### Instructions
 
-#### 1.固定宽高比的容器
+请参照对应的模板介绍，目前saqqdy-cli提供以下模板:
 
-html
-```
-<div class="aspectratio">
-    <div class="aspectratio-content">
-        这里是你的内容
-    </div>
-</div>
-```
-css
-```
-.aspectratio {
-    /* 这里只写aspect-ratio属性 */
-    aspect-ratio: '16:9';
-}
-.aspectratio {
-    /* 另起一行写其他属性 */
-    width: xx;
-    height: xx;
-    ...
-}
-```
+- [vue_px_to_viewport_h5](https://github.com/saqqdy/vue_px_to_viewport_h5)
+- [vue_px_to_rem_h5](https://github.com/saqqdy/vue_px_to_rem_h5)
+- [vue_cli3_px_to_viewport_h5](https://github.com/saqqdy/vue_cli3_px_to_viewport_h5)
+- [vue_cli3_px_to_rem_h5](https://github.com/saqqdy/vue_cli3_px_to_rem_h5)
 
-#### 2.不走自动计算的样式
-
-不需要自动计算的样式请以"ignore"、"hairlines"或者"ig-"开头
-html
-```
-<div class="ig-menu menu">
-    <div class="text">
-        这里是你的内容
-    </div>
-</div>
-```
-css
-```
-.ig-menu {
-    /* 这里的样式px不会被计算成vw */
-    width: 100px;
-    .text {
-        /* 这里的样式px不会被计算成vw */
-        font-size: 14px;
-    }
-}
-.menu {
-    /* 这里的样式px会被计算成vw */
-    height: 100px;
-    .text {
-        /* 这里的样式px会被计算成vw */
-        font-size: 14px;
-    }
-}
-```
+资源不断更新中，请前往[https://github.com/saqqdy](https://github.com/saqqdy)查看全部模板资源
 
 ### Contribution
 
