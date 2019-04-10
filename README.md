@@ -42,10 +42,11 @@ npm test
 
 请参照对应的模板介绍，目前saqqdy-cli提供以下模板:
 
-- [vue_px_to_viewport_h5](https://github.com/saqqdy/vue_px_to_viewport_h5)
-- [vue_px_to_rem_h5](https://github.com/saqqdy/vue_px_to_rem_h5)
-- [vue_cli3_px_to_viewport_h5](https://github.com/saqqdy/vue_cli3_px_to_viewport_h5)
-- [vue_cli3_px_to_rem_h5](https://github.com/saqqdy/vue_cli3_px_to_rem_h5)
+- [vue_px_to_viewport_h5](https://github.com/saqqdy/vue_px_to_viewport_h5)  基于自动转换px到vw的H5网站解决方案
+- [vue_px_to_rem_h5](https://github.com/saqqdy/vue_px_to_rem_h5)  基于自动转换px到rem的H5网站解决方案
+- [vue_cli3_px_to_viewport_h5](https://github.com/saqqdy/vue_cli3_px_to_viewport_h5)  基于CLI3自动转换px到vw的H5网站解决方案
+- [vue_cli3_px_to_rem_h5](https://github.com/saqqdy/vue_cli3_px_to_rem_h5)  基于自动转换px到rem的H5网站解决方案
+- [vue_cli3_multiple](https://github.com/saqqdy/vue_cli3_multiple)  基于CLI3的多页应用模板
 
 资源不断更新中，请前往[https://github.com/saqqdy](https://github.com/saqqdy)查看全部模板资源
 

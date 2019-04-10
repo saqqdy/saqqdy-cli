@@ -42,8 +42,9 @@ program
       });
   program.parse(process.argv);
 
-  console.log('\n\n\n');
-  console.log(program, 'program');
+  // console.log('\n\n\n');
+  // console.log(program, 'program');
+
   // console.log('\n\n\n');
   // logUpdate(program.args, 'args');
   // console.log('\n\n\n');

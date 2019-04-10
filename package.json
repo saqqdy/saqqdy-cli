@@ -1,6 +1,6 @@
 {
   "name": "@saqqdy/cli",
-  "version": "1.0.15",
+  "version": "1.0.16",
   "description": "saqqdy的cli工具",
   "private": false,
   "main": "index.js",
