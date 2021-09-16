@@ -29,8 +29,8 @@
   "dependencies": {
     "commander": "^2.19.0",
     "git-clone": "^0.1.0",
-    "log-update": "^3.2.0",
+    "log-update": "^4.0.0",
     "shelljs": "^0.8.3",
-    "tracer": "^0.9.8"
+    "tracer": "^1.0.2"
   }
 }
